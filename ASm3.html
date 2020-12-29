@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASM3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .table-hover>tbody>tr:hover {
+            --bs-table-accent-bg: #e5c7ca;
+        }
+        .btn{
+            border-radius: 0;
+        }
+        .btn.one{
+            border-top-left-radius: .2rem !important;
+            border-bottom-left-radius: .2rem !important;
+        }
+        .btn.three{
+            border-top-right-radius: .2rem !important;
+            border-bottom-right-radius: .2rem !important;
+        }
+    </style>
+</head>
+<body>
+
+  <table class="my-3">
+      <tr class="">
+          <td class="btn one btn-success text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                  <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+              </svg>
+              Export to CSV
+          </td>
+          <td class="btn btn-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+              </svg>
+             New
+          </td>
+          <td class="btn three btn-warning text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+                  <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+              </svg>
+           Delete
+          </td>
+      </tr>
+  </table>
+
+<table class="table table-bordered w-100 table-hover">
+    <tr>
+        <th rowspan="2">
+            <input type="checkbox" class="">
+        </th>
+        <th rowspan="2" class="">ID</th>
+        <th colspan="3" class="text-end">Product</th>
+
+        <th rowspan="2" class="text-start">In stock</th>
+        <th colspan="2" class="text-start">Customer</th>
+    </tr>
+    <tr>
+        <th>name</th>
+        <th>
+            <select name="" id="" class="border-0 w-100 fw-bold">
+                <option value="#" >price</option>
+            <option value="">2100</option>
+            <option value="">2101</option>
+            <option value="">2102</option>
+                <option value="">2103</option>
+            </select>
+        </th>
+        <th>Coupon</th>
+        <th>name</th>
+        <th>
+            order
+        </th>
+    </tr>
+<tbody>
+<tr>
+    <td><input type="checkbox" class=""></td>
+    <td>4</td>
+    <td class="text-center">Item name4</td>
+    <td>
+
+            <input type="text" class="border-0 form-control w-25" value="2104">
+     </td>
+    <td>no</td>
+    <td>yes</td>
+    <td class="text-center">Customer 4</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td><input type="checkbox" class=""></td>
+    <td>3</td>
+    <td class="text-center">Item name3</td>
+    <td>
+
+        <input type="text" class="border-0 form-control w-25" value="2103">
+    </td>
+    <td>no</td>
+    <td>yes</td>
+    <td class="text-center">Customer 3</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td><input type="checkbox" class=""></td>
+    <td>2</td>
+    <td class="text-center">Item name2</td>
+    <td>
+
+        <input type="text" class="border-0 form-control w-25" value="2102">
+    </td>
+    <td>no</td>
+    <td>yes</td>
+    <td class="text-center">Customer 2</td>
+    <td>4</td>
+</tr>
+<tr class="">
+    <td><input type="checkbox" class=""></td>
+    <td>1</td>
+    <td class="text-center">Item name1</td>
+    <td>
+
+        <input type="text" class="border-0 form-control w-25" value="2101">
+    </td>
+    <td>yes</td>
+    <td>no</td>
+    <td class="text-center">Customer 1</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td><input type="checkbox" class=""></td>
+    <td>0</td>
+    <td class="text-center">Item name0</td>
+    <td>
+
+        <input type="text" class="border-0 form-control w-25" value="2100">
+    </td>
+    <td>yes</td>
+    <td>no</td>
+    <td class="text-center">Customer 0</td>
+    <td>4</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
